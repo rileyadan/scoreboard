@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class = "team" id = "home">
+                <h3 class = "team-text">HOME</h3>
+                <div id = "home-team" class = "number-box score-box">
+                    <p class="score" id="home-score-el">0</p>
+                </div>
+                <div class = "btn-container">
+                    <button class = "btn" onclick = "add1PointHome()">+1</button>
+                    <button class = "btn" onclick = "add2PointsHome()">+2</button>
+                    <button class = "btn" onclick = "add3PointsHome()">+3</button>
+                </div>
+                <h3>FOULS</h3>
+                <div class = "number-box" id = "foul-box">
+                    <p id = "home-fouls-el">0</p>
+                </div>
+                <div class = "foul-btn-container">
+                    <button class = "btn" onclick = "subtract1FoulHome()">-1</button>
+                    <button class = "btn" onclick = "add1FoulHome()">+1</button>
+                </div>
+            </div>
+            <div id="center-column">
+                <div class = "number-box" id="timer-box">
+                    <p id = "countdown">12:00</p>
+                    <script src="script.js"></script>
+                </div>
+                <div class = "timer-btn-container">
+                    <button class = "btn" id = "stop-btn" onclick = "resetCountdown()"></button>
+                    <button class = "btn" id = "play-btn" onclick = "startCountdown()"></button>
+                    <button class = "btn" id = "pause-btn" onclick = "pauseCountdown()"></button>
+                </div>
+                <h3>PERIOD</h3>
+                <div class = "number-box" id = "period-box">
+                    <p id = "period-el">1</p>
+                </div>
+                <div class = "foul-btn-container">
+                    <button class = "btn" onclick = "subtract1Period()">-1</button>
+                    <button class = "btn" onclick = "add1Period()">+1</button>
+                </div>
+            </div>
+            <div class = "team" id = "AWAY">
+                <h3 class = "team-text">AWAY</h3>
+                <div id = "away-team" class = "number-box score-box">
+                    <p class="score" id="away-score-el">0</p>
+                </div>
+                <div class = "team-btn-container">
+                    <button class = "btn" onclick = "add1PointAway()">+1</button>
+                    <button class = "btn" onclick = "add2PointsAway()">+2</button>
+                    <button class = "btn" onclick = "add3PointsAway()">+3</button>
+                </div>
+                <h3>FOULS</h3>
+                <div class = "number-box" id = "foul-box">
+                    <p id = "away-fouls-el">0</p>
+                </div>
+                <div class = "foul-btn-container">
+                    <button class = "btn" onclick = "subtract1FoulAway()">-1</button>
+                    <button class = "btn" onclick = "add1FoulAway()">+1</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
